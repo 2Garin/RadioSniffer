@@ -384,7 +384,7 @@ void handleInt()
     return;
   }
 
-  if (!(1 & (PIND >> 2)))
+  if (!(1 & (PIND >> rxPin)))
     keyRawLog[changeCnt] = duration; // if (!digitalRead(rxPin))
   else
     keyRawLog[changeCnt] = -duration;
